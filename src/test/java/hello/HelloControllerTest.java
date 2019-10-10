@@ -26,7 +26,7 @@ public class HelloControllerTest {
     public void getHello() throws Exception {
     	String rightAnswer = "<h1>Hello World!</h1>\n" +
     					"<p>This web app is powered by \n" +
-    					"<a href='https://github.com/mygithubid/spring-boot-minimal-webapp'>this github repo</a></p>\n";
+    					"<a href='https://github.com/ruxin827/spring-boot-minimal-webapp'>this github repo</a></p>\n";
         mvc.perform(MockMvcRequestBuilders.get("/").accept(MediaType.APPLICATION_JSON))
                 .andExpect(status().isOk())
                 .andExpect(content().string(equalTo(rightAnswer)));
